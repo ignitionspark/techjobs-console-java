@@ -90,12 +90,12 @@ public class JobData {
 
         ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
 
-        for (HashMap<String, String> aValue : allJobs) {
-            for (String valueSearch : aValue.keySet()) {
-                String job = aValue.get(valueSearch);
+        for (HashMap<String, String> jobValue : allJobs) {
+            for (String valueSearch : jobValue.keySet()) {
+                String job = jobValue.get(valueSearch);
 
                 if (job.toLowerCase().contains(value.toLowerCase())) {
-                    jobs.add(aValue);
+                    jobs.add(jobValue);
                     break;
                 }
 
